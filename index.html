@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RUN1-CS — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/redacted.css" />
+  </head>
+  <body>
+    <div id="boot"><pre id="bootlog"></pre></div>
+    <canvas id="rain" aria-hidden="true"></canvas>
+
+    <header>
+      <a class="logo" href="#hero">NC//</a>
+      <nav>
+        <a href="#about">about</a><a href="#skills">skills</a
+        ><a href="#projects">projects</a><a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ====== HERO — edit name, roles ====== -->
+      <section id="hero">
+        <div class="tag">// session: online</div>
+        <h1 class="name" id="name" data-t="RUN1-CS">RUN1-CS</h1>
+        <div class="role">
+          <span id="role"></span><span class="caret"></span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#projects">view projects</a>
+          <a class="btn alt" href="#contact">open channel</a>
+        </div>
+      </section>
+
+      <!-- ====== ABOUT ====== -->
+      <section id="about">
+        <h2>about</h2>
+        <div class="about rv">
+          <div>
+            <p>
+              I build software, system architectures, and low-level solutions,
+              ranging from web applications and backend systems to operating
+              systems and Linux tooling. My work focuses on creating practical,
+              reliable, and efficient technology for developers, businesses, and
+              users who need software that solves real problems.
+            </p>
+            <p>
+              I primarily work with TypeScript, JavaScript, C, Linux, and
+              PostgreSQL, focusing on system architecture, backend engineering,
+              and low-level development; currently exploring local AI systems,
+              operating system development, and infrastructure tooling.
+            </p>
+          </div>
+          <div class="stats">
+            <div><span>location</span><b class="redacted">Nice try</b></div>
+            <div><span>focus</span><b>System development</b></div>
+            <div><span>experience</span><b>3 years</b></div>
+            <div><span>status</span><b>Currently unavailable</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== SKILLS — data-v is the percentage ====== -->
+      <section id="skills">
+        <h2>skills</h2>
+        <div class="skills rv">
+          <div class="bar">
+            <span>JavaScript / TypeScript</span>
+            <div class="track"><div class="fill" data-v="90"></div></div>
+            <em>90</em>
+          </div>
+
+          <div class="bar">
+            <span>C / C++</span>
+            <div class="track"><div class="fill" data-v="85"></div></div>
+            <em>85</em>
+          </div>
+
+          <div class="bar">
+            <span>Linux / NixOS</span>
+            <div class="track"><div class="fill" data-v="85"></div></div>
+            <em>85</em>
+          </div>
+
+          <div class="bar">
+            <span>Backend Development</span>
+            <div class="track"><div class="fill" data-v="85"></div></div>
+            <em>85</em>
+          </div>
+
+          <div class="bar">
+            <span>System Architecture</span>
+            <div class="track"><div class="fill" data-v="80"></div></div>
+            <em>80</em>
+          </div>
+
+          <div class="bar">
+            <span>SQL / PostgreSQL</span>
+            <div class="track"><div class="fill" data-v="75"></div></div>
+            <em>75</em>
+          </div>
+
+          <div class="bar">
+            <span>Assembly</span>
+            <div class="track"><div class="fill" data-v="55"></div></div>
+            <em>55</em>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== PROJECTS — duplicate a .card to add more ====== -->
+      <section id="projects">
+        <h2>projects</h2>
+        <div class="grid">
+          <a class="card rv" href="https://github.com/RUN1-CS/Neon-Kernel">
+            <div class="meta">SIDE PROJECT</div>
+            <h3>Neon Kernel</h3>
+            <p>
+              A bare-metal kernel development project focused on learning
+              low-level C programming and operating system fundamentals.
+            </p>
+            <div class="stack">C</div>
+          </a>
+
+          <a class="card rv" href="https://github.com/RUN1-CS/XXSH">
+            <div class="meta">PUBLIC</div>
+            <h3>XXSH</h3>
+            <p>
+              A lightweight command-line shell with a custom interpreter,
+              written in C.
+            </p>
+            <div class="stack">C</div>
+          </a>
+
+          <a class="card rv" href="https://github.com/RUN1-CS/Amadeus">
+            <div class="meta">PUBLIC</div>
+            <h3>Amadeus</h3>
+            <p>
+              A local AI chat application designed to integrate language models
+              with document context and extensible functionality.
+            </p>
+            <div class="stack">
+              TypeScript · Vue · PHP · Node.js · PostgreSQL · Docker · Ollama
+            </div>
+          </a>
+
+          <a class="card rv" href="https://github.com/RUN1-CS/Synapse">
+            <div class="meta">PUBLIC</div>
+            <h3>Synapse</h3>
+            <p>
+              A cross-platform chatting application built with Flutter and a
+              backend powered by Node.js and PostgreSQL.
+            </p>
+            <div class="stack">
+              Dart · Flutter · PostgreSQL · Node.js · JavaScript · Docker
+            </div>
+          </a>
+
+          <a class="card rv" href="https://github.com/RUN1-CS/The-Economy-Sim">
+            <div class="meta">PUBLIC</div>
+            <h3>The Economy Sim</h3>
+            <p>
+              A simple economic simulation game built with TypeScript and a
+              multi-technology backend.
+            </p>
+            <div class="stack">
+              TypeScript · Node.js · JavaScript · PHP · Docker
+            </div>
+          </a>
+
+          <a
+            class="card rv"
+            href="https://github.com/RUN1-CS/mindustry-eighty-six"
+          >
+            <div class="meta">PUBLIC</div>
+            <h3>Mindustry: Eighty Six</h3>
+            <p>
+              A Java modification for Mindustry, bringing an Eighty Six-inspired
+              project into the game's ecosystem.
+            </p>
+            <div class="stack">Java</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ====== CONTACT ====== -->
+      <section id="contact">
+        <h2>contact</h2>
+        <div class="term rv">
+          <div>
+            type <span style="color: var(--ice)">help</span> and press enter
+          </div>
+          <div class="out" id="out"></div>
+          <div class="row">
+            <span class="p">runner@net:~$</span
+            ><input
+              id="cmd"
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="terminal command"
+            />
+          </div>
+        </div>
+        <div class="links rv">
+          <a href="https://patreon.com/RUN1_IT">patreon</a>
+          <a href="https://github.com/RUN1-CS">github</a>
+        </div>
+      </section>
+    </main>
+    <footer>© 2026 RUN1-CS</footer>
+    <script src="scripts/index.js" type="module"></script>
+  </body>
+</html>
